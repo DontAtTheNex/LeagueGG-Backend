@@ -49,14 +49,12 @@ module.exports = {
   */
   cluster: {
     clusters: [{
-      host: '127.0.0.1',
-      port: 6379,
+      host: 'https://leaguegg.tk/',
       password: null,
       db: 0
     },
     {
-      host: '127.0.0.1',
-      port: 6380,
+      host: 'https://leaguegg.tk/',
       password: null,
       db: 0
     }]
