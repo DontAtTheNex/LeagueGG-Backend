@@ -21,7 +21,7 @@ module.exports = {
   | Redis connection to be used by default.
   |
   */
-  connection: Env.get('REDIS_CONNECTION', 'local'),
+  connection: Env.get('REDIS_CONNECTION', 'server'),
 
   /*
   |--------------------------------------------------------------------------
@@ -31,9 +31,8 @@ module.exports = {
   | Configuration for a named connection.
   |
   */
-  local: {
-    host: Env.get('REDIS_HOST', '127.0.0.1'),
-    port: Env.get('REDIS_PORT', 6379),
+  server: {
+    host: Env.get('REDIS_HOST', 'https://leaguegg.tk/'),
     password: Env.get('REDIS_PASSWORD', null),
     db: 0,
     keyPrefix: ''
